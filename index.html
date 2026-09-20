@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <title>X Focus Mode — a quieter X</title>
+  <meta name="description" content="Your X timeline, with room to read. Get X Focus Mode for Chrome: a quieter layout, readable posts, and your bookmarks, all in one place.">
+  <meta property="og:title" content="X Focus Mode — a quieter X">
+  <meta property="og:description" content="Less noise. More room. Download the Chrome extension that gives your X timeline room to breathe.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://belfiore.github.io/x-focus-mode">
+  <link rel="canonical" href="https://belfiore.github.io/x-focus-mode/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1b18'/%3E%3Cpath d='M42 26.5H26.5V42M58 26.5H73.5V42M26.5 58V73.5H42M58 73.5H73.5V58' fill='none' stroke='%23f8f8f0' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="X Focus Mode home"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg><span>X Focus Mode</span></a>
+    <span class="header-note">A quieter X.</span>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <p class="eyebrow enter">ROOM FOR WHAT YOU CAME TO READ</p>
+      <h1 class="enter" id="hero-title">Less noise.<br><span>More room.</span></h1>
+      <p class="hero-copy enter">Your X timeline, with room to read.<br> Bigger posts. Fewer distractions. Everything you came for.</p>
+      <div class="download-group enter">
+        <button class="download-button store-pending" type="button" disabled aria-label="Chrome Web Store release is being prepared"><span>Chrome Web Store</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg></button>
+        <a class="zip-download" href="downloads/x-focus-mode-1.0.0.zip" download="x-focus-mode-1.0.0.zip">Download ZIP instead <span aria-hidden="true">↓</span></a>
+        <p class="download-note">Store release in preparation <span>·</span> ZIP available now</p>
+        <p class="download-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="experience wrap" aria-labelledby="experience-title">
+      <div class="experience-heading">
+        <div><p class="eyebrow">A SMALL CHANGE. A DIFFERENT FEEL.</p><h2 id="experience-title">The same X. Space to enjoy it.</h2></div>
+        <div class="preview-control"><span id="compare-label">Feel the difference</span><button id="reader-toggle" class="reader-toggle" role="switch" aria-checked="true" aria-label="Focus preview"><span class="toggle-track"><span></span></span><span>Focus</span></button></div>
+      </div>
+      <div class="reader-preview" id="reader-preview" data-reader="true" data-theme="dark">
+        <div class="preview-top"><span class="preview-brand">focus<span class="preview-original">X</span></span><div class="preview-appearance" role="group" aria-label="Preview appearance"><button class="appearance active" data-theme="dark" aria-label="Black appearance" aria-pressed="true"><span class="swatch black"></span></button><button class="appearance" data-theme="light" aria-label="White appearance" aria-pressed="false"><span class="swatch white"></span></button></div></div>
+        <nav class="preview-nav" aria-label="Preview feed"><button class="selected" data-feed="home" aria-current="page">Home</button><button data-feed="bookmarks">Bookmarks</button><span class="native-only">Explore</span><span class="native-only">Notifications</span><span class="native-only">Messages</span></nav>
+        <div class="post-stage"><article class="preview-post" aria-live="polite" aria-atomic="true"><p class="post-author"><span class="avatar">m</span><strong id="author">Mara Ellis</strong><span id="handle">@maraellis</span><span>·</span><span>2h</span></p><p class="post-copy" id="post-copy">The best things we make give us more room to think. A quieter page. An open window. A slower Sunday.</p><div class="post-actions" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8H7l-4 3v-7a8 8 0 1 1 17-4Z"/></svg>24</span><span><svg viewBox="0 0 24 24"><path d="m3 8 4-4 4 4M7 4v12a2 2 0 0 0 2 2h3m9-2-4 4-4-4m4 4V8a2 2 0 0 0-2-2h-3"/></svg>182</span><span><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>2,184</span><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4Z"/></svg></div></article></div>
+        <aside class="preview-noise native-only" aria-hidden="true"><span>What’s happening</span><div>Trending now<i></i><i></i></div><div>More for you<i></i><i></i></div></aside>
+        <div class="preview-bottom"><span class="sample-label">Interactive preview · sample posts</span><div class="post-stepper"><span id="post-position">01 / 03</span><button id="next-post" aria-label="Next preview post" title="Next post"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></button></div></div>
+      </div>
+      <div class="experience-footer"><p>Your posts. Your bookmarks. A little more breathing room.</p><span><kbd>F</kbd> to switch back. <kbd>↓</kbd> to move on.</span></div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>X Focus Mode <span class="footer-dot">·</span> Made for reading.</span><span><a href="privacy.html">Privacy</a> <span class="footer-dot">·</span> <a href="https://github.com/Belfiore/x-focus-mode/issues">Support</a> <span class="footer-dot">·</span> Independent of X.</span></footer>
+</body>
+</html>
